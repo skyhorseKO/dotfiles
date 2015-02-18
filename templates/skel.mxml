@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" <!-- xmlns:mymx="*" --> layout="absolute">
+<!--<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="500" height="100">-->
+      <mx:Script source="customLogic.as"/>
+      <!-- </mx:Canvas> -->
+</mx:Application>
