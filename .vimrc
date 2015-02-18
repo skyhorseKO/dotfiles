@@ -1,4 +1,4 @@
-"
+"設定の間だけoff
 filetype off
 filetype plugin indent off
 set encoding=utf-8
@@ -34,6 +34,7 @@ set mouse=a
 set guioptions+=a
 set ttymouse=xterm2
 
+"NeoBundleの設定
 if has('vim_starting')
     set runtimepath+=~/.vim/bundle/neobundle.vim
     call neobundle#begin(expand('~/.vim/bundle'))
@@ -115,6 +116,7 @@ if has("autocmd")
     \ endif
 endif
 
+"新規作成テンプレートの読み込み
 augroup SkeletonAu
 		autocmd!
 		autocmd BufNewFile *.html 0r ~/.vim/templates/skel.html
@@ -168,6 +170,7 @@ nnoremap <silent> <Leader>fe :<C-u>VimFilerBufferDir -quit<CR>
 "現在開いているﾊﾞｯﾌｧをIDE風に開く
 nnoremap <silent> <Leader>fi :<C-u>VimFilerBufferDir -split -simple -winwidth=35 -no-quit<CR>
 
+"コンパイルや実行用
 autocmd FileType perl :map <C-n> <ESC>:w<CR>:!perl -cw %<CR>
 autocmd FileType perl :map <C-e> <ESC>:!perl %<CR>
 autocmd FileType ruby :map <C-n> <ESC>:w<CR>:!ruby -cW %<CR>
@@ -183,7 +186,7 @@ autocmd FileType actionscript :map <C-e> <ESC>:!open %<.swf<CR>:!flashlog<CR>
 autocmd FileType mxml :map <C-n> <ESC>:w<CR>:!mxmlc %<CR>
 autocmd FileType mxml :map <C-e> <ESC>:!open %<.swf<CR>:!flashlog<CR>
 
-
+"括弧を自動で閉じる
 imap { {}<LEFT>
 imap [ []<LEFT>
 imap ( ()<LEFT>
@@ -196,6 +199,7 @@ let skk_server_portnum = '55100'
 let skk_server_encoding = 'euc-jp'
 let skk_auto_save_jisyo = 1
 
+"元に戻す
 filetype on
 filetype indent plugin on
 " reference
@@ -205,15 +209,15 @@ filetype indent plugin on
 " need 'set enc=utf-8' and
 " below shell environment variable for UTF-8 characters
 " export __CF_USER_TEXT_ENCODING='0x1F5:0x08000100:14'
-"
-" Vim(Mac)
-" if has('mac') && !has('gui')
-" nnoremap <silent> <Space>y :.w !pbcopy<CR><CR>
-" vnoremap <silent> <Space>y :w !pbcopy<CR><CR>
-" nnoremap <silent> <Space>p :r !pbpaste<CR>
-" vnoremap <silent> <Space>p :r !pbpaste<CR>
-    " GVim(Mac & Win)
-    " else
-"  nmap <D-y> "*y
-"  noremap <Space>p "*p
-"     endif
+
+
+
+
+
+
+
+
+
+
+
+
